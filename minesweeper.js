@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', startGame)
 var board={
   cells:[0,1,2,3]
 }
+board.cell[0]={}
+board.cell[1]={}
+board.cell[2]={}
+board.cell[3]={}
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
