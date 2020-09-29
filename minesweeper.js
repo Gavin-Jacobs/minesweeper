@@ -62,10 +62,10 @@ var board={
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
-  for(i=1, i<board.cells.length; i++;) {
-    countSurroundingMines(board.cells)
+  //for(i=1, i<board.cells.length; i++;) {
+  //  countSurroundingMines(board.cells)
 
-  }
+  //}
 }
 
 // Define this function to look for a win condition:
