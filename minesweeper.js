@@ -101,7 +101,7 @@ var surrounding = lib.getSurroundingCells(cell.row, cell.col)
 //
 // It will return cell objects in an array. You should loop through 
 // them, counting the number of times `cell.isMine` is true.
-function countSurroundingMines (cell) {
+function countSurroundingMines (cells) {
   var count=0
   for(i=0;i<surrounding.length;i++){
     if(cells.isMine==true)
