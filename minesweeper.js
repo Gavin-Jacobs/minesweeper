@@ -112,3 +112,4 @@ function countSurroundingMines (cell) {
  
 }
 
+console.log(countSurroundingMines(board.cells[0]))
