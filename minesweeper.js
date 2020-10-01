@@ -43,7 +43,7 @@ var board={
     {
       row:2,
       col:0,
-      isMine:true,
+      isMine:false,
       hidden:true,
     },
     {
@@ -96,10 +96,9 @@ function countSurroundingMines (cell) {
   var count=0
   for(var i=0;i<surrounding.length;i++){
     if(i.isMine==true)
-    count++;
-    return count
+    count++
   }
-
+ return count
  
 }
 
