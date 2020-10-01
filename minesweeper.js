@@ -104,7 +104,7 @@ var surrounding = lib.getSurroundingCells(row, col)
 function countSurroundingMines (cell) {
   var count=0
   for(var i=0;i<surrounding.length;i++){
-    if(cell.isMine==true)
+    if(board.cells.isMine==true)
     count++;
    
   }
