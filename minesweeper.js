@@ -86,7 +86,7 @@ function startGame () {
 function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
     if ((cell.isMine==true &&cell.isMarked==true)==true &&(cells.isMine==false&&cell.hidden==false)==true)
-      return lib.displayMessage('You win!')
+      lib.displayMessage('You win!')
   }
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
