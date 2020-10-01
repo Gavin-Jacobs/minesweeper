@@ -89,7 +89,10 @@ function checkForWin () {
 function countSurroundingMines (cells) {
   var surrounding=lib.getSurroundingCells(cells.row,cells.col);
   var count=0
-  surrounding=count
+ for(i=0;i<surrounding;i++){
+  if(surrounding[i]==isMine.true)
+    count++
+  }
   return count
 }
 
