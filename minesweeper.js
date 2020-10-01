@@ -73,11 +73,12 @@ var board={
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
-  var n=0
-  for(i=0; i<board.cells.length; i++) {
-    countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8])=n
-    board.cells[0,1,2,3,4,5,6,7,8].surroundingMines=n
-  }
+  //var n=0
+  //for(i=0; i<board.cells.length; i++) {
+  //  countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8])=n
+ // }
+  //board.cells[0,1,2,3,4,5,6,7,8].surroundingMines=n
+  board.cells.map(countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8]))
 }
 
 // Define this function to look for a win condition:
