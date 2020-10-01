@@ -81,7 +81,6 @@ function startGame () {
 }
 
 
-  }
 // Define this function to look for a win condition:
 //
 // 1. Are all of the cells that are NOT mines visible?
