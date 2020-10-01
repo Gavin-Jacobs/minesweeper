@@ -9,63 +9,63 @@ var board={
       col:0,
       isMine:false,
       hidden:true,
-    
+      surroundingMines:0
     },
     {
       row:0,
       col:1,
       isMine:true,
       hidden:true,
-   
+      surroundingMines:0
     },
     {
       row:0,
       col:2,
       isMine:true,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:1,
       col:0,
       isMine:true,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:1,
       col:1,
       isMine:true,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:1,
       col:2,
       isMine:false,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:2,
       col:0,
       isMine:false,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:2,
       col:1,
       isMine:true,
       hidden:true,
-
+      surroundingMines:0
     },
     {
       row:2,
       col:2,
       isMine:true,
       hidden:true,
-      
+      surroundingMines:0
     }
   ]
 }
@@ -73,12 +73,7 @@ var board={
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
-  var newNum=0
-  for(i=0; i<board['cells'].length;i++){
-    newNum[i]=countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8])
-      
-  }
- return newNum
+  return board['cells'].map(surroundingMines=>countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8]))
 }
 // Define this function to look for a win condition:
 //
