@@ -37,35 +37,35 @@ var board={
       col:1,
       isMine:true,
       hidden:true,
-      surroundingMines:3
+      surroundingMines:1
     },
     {
       row:1,
       col:2,
       isMine:false,
       hidden:true,
-      surroundingMines:5
+      surroundingMines:1
     },
     {
       row:2,
       col:0,
       isMine:true,
       hidden:true,
-      surroundingMines:3
+      surroundingMines:1
     },
     {
       row:2,
       col:1,
       isMine:true,
       hidden:true,
-      surroundingMines:3
+      surroundingMines:1
     },
     {
       row:2,
       col:2,
       isMine:true,
       hidden:true,
-      surroundingMines:3
+      surroundingMines:1
     }
   ]
 }
