@@ -74,8 +74,10 @@ function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
   
-  return board['cells'].map(_surroundingMines=>countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8]));
-  
+  for(i=0;i<board['cells'].length;i++){
+    board['cells'].surroundingMines=countSurroundingMines(board['cells'][0,1,2,3,4,5,6,7,8])
+  }
+  addEventListener('click',checkForWin)
 }
 // Define this function to look for a win condition:
 //
