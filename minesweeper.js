@@ -76,6 +76,7 @@ function startGame () {
   for(i=0; i<board.cells.length; i++) {
     countSurroundingMines(board.cells[0,1,2,3,4,5,6,7,8])
   }
+  return board['cells'].surroundingMines
 }
 
 // Define this function to look for a win condition:
