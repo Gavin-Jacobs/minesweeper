@@ -113,4 +113,4 @@ function countSurroundingMines (cell) {
  
 }
 
-console.log(startgame())
+console.log(startGame())
