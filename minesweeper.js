@@ -107,9 +107,9 @@ function countSurroundingMines (cells) {
   for(i=0;i<surrounding.length;i++){
     if(board.cells[0,1,2,3,4,5,6,7,8].isMine==true)
     count++;
-    return count
+   
   }
- 
+  return count
  
 }
 
