@@ -88,6 +88,8 @@ function checkForWin () {
 // them, counting the number of times `cell.isMine` is true.
 function countSurroundingMines (cells) {
   var surrounding=lib.getSurroundingCells(cells.row,cells.col);
- return surrounding
+  var count=0
+  surrounding=count
+  return count
 }
 
