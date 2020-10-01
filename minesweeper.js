@@ -8,53 +8,64 @@ var board={
       row:0,
       col:0,
       isMine:false,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:0,
       col:1,
       isMine:true,
-      hidden:true},
+      hidden:true,
+      surroundingMines:3
+    },
     {
       row:0,
       col:2,
       isMine:true,
-      hidden:true},
+      hidden:true,
+      surroundingMines:2
+    },
     {
       row:1,
       col:0,
       isMine:true,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:1,
       col:1,
       isMine:true,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:1,
       col:2,
       isMine:false,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:2,
       col:0,
       isMine:true,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:2,
       col:1,
       isMine:true,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     },
     {
       row:2,
       col:2,
       isMine:true,
-      hidden:true
+      hidden:true,
+      surroundingMines:3
     }
   ]
 }
@@ -82,17 +93,12 @@ function checkForWin () {
 // (there could be as many as 8). You don't have to get the surrounding
 // cells yourself! Just use `lib.getSurroundingCells`: 
 //
-//var surrounding = lib.getSurroundingCells(cell.row, cell.col)
+var surrounding = lib.getSurroundingCells(cell.row, cell.col)
 //
 // It will return cell objects in an array. You should loop through 
 // them, counting the number of times `cell.isMine` is true.
-function countSurroundingMines (cells) {
-  var surrounding=lib.getSurroundingCells(cells.row,cells.col);
-  var count=0
- for(i=0;i<surrounding;i++){
-  if(surrounding[i]==isMine.true)
-    count++
-  }
-  return count
+function countSurroundingMines (cell) {
+  return surrounding
+ 
 }
 
