@@ -103,7 +103,7 @@ var surrounding = lib.getSurroundingCells(cell.row, cell.col)
 //
 // It will return cell objects in an array. You should loop through 
 // them, counting the number of times `cell.isMine` is true.
-function countSurroundingMines (cells) {
+function countSurroundingMines (cell) {
   var count=0
   for(i=0;i<surrounding.length;i++){
     if(board.cells[0,1,2,3,4,5,6,7,8].isMine==true)
