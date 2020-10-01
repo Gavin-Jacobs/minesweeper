@@ -114,4 +114,4 @@ function countSurroundingMines (cell) {
  
 }
 
-console.log(checkForWin ())
+console.log(checkForWin)
