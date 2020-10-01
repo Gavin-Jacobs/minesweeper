@@ -113,4 +113,4 @@ function countSurroundingMines (cell) {
  
 }
 
-console.log(countSurroundingMines(board.cells[0]))
+console.log(countSurroundingMines(board.cells[1]))
