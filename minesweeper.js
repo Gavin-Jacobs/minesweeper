@@ -75,7 +75,7 @@ function startGame () {
   lib.initBoard()
   var x=1
   for(i=0;i<board['cells'].length;i++){
-   countSurroundingMines(board['cells'][0,1,2,3,4,5,6,7,8])=x
+   countSurroundingMines(0,1,2,3,4,5,6,7,8)=x
   }
   board.cells[0,1,2,3,4,5,6,7,8].surroundingMines=x
   document.addEventListener('contextmenu',checkForWin)
@@ -89,7 +89,7 @@ function startGame () {
 function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
     if ((board.cells.isMine==true &&board.cells.isMarked==true)==true &&(board.cells.isMine==false&&board.cells.hidden==false)==true)
-    lib.displayMessage('You win!')
+    return lib.displayMessage('You win!')
   }
   
     
