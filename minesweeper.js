@@ -118,4 +118,4 @@ function countSurroundingMines (cell) {
  
 }
 
-console.log(countSurroundingMines(0))
+console.log(countSurroundingMines(5))
