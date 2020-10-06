@@ -75,8 +75,7 @@ function startGame () {
   lib.initBoard()
   var x=1
   for(i=0;i<board['cells'].length;i++){
-   x=countSurroundingMines(0,1,2,3,4,5,6,7,8)
-   board['cells'].push(surroundingMines=x)
+   countSurroundingMines(0,1,2,3,4,5,6,7,8)
   }
   
   document.addEventListener('contextmenu',checkForWin)
@@ -116,7 +115,7 @@ function countSurroundingMines (cell) {
     count++;
    
   }
-  return count
+  board['cells'][0,1,2,3,4,5,6,7,8].surroundingMines=count
  
 }
 
