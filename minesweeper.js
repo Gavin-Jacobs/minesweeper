@@ -119,9 +119,9 @@ function checkForWin () {
       count4++
     }
     console.log(count3,count4)
-  }//count1==count3&&
-  if(count2==count4){
-    console.log('whynot')
+  }
+  if(count1==count3&&count2==count4){
+    lib.displayMessage('You Win!')
   }
     
   // You can use this function call to declare a winner (once you've
