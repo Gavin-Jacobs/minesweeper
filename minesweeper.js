@@ -111,7 +111,7 @@ function checkForWin () {
   var count3=0
   var count4=0
   for( i=0; i<board.cells.length; i++) {
-    if (board.cells[0,1,2,3,4,5,6,7,8].isMine==true&&board.cells[0,1,2,3,4,5,6,7,8].isMarked==true){
+    if (board.cells[0,1,2,3,4,5,6,7,8].isMine==true&&board.cells[0,1,2,3,4,5,6,7,8].Marked==true){
     
     count3++
     }
