@@ -113,10 +113,11 @@ function countSurroundingMines (cell) {
   for(var i=0;i<surrounding.length;i++){
     if(board['cells'][i].isMine==true){
     count++;
+    board.cells[i].surroundingMines=count
     }
   }
-  //board.cells[i].surroundingMines=count
-  console.log(surrounding.length)
+  //console.log(surrounding.length)
+  
 }
 
 console.log(countSurroundingMines(6))
