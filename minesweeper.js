@@ -111,8 +111,8 @@ var test=board.cells[0,1,2,3,4,5,6,7,8]
 function countSurroundingMines (cell) {
   var count=0
   var surrounding=lib.getSurroundingCells(board.cells[0,1,2,3,4,5,6,7,8].row,board.cells[0,1,2,3,4,5,6,7,8].col)
-  for(var i=0;i<board.cells.length;i++){
-    if(surrounding[i].isMine==true){
+  for(var i=0;i<surrounding.length;i++){
+    if(board.cells[i].isMine==true){
     count++
     
     }
