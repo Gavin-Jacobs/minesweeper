@@ -91,7 +91,7 @@ function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
     if (board.cells[i].isMine==false&&board.cells[i].hidden==false){
     //return lib.displayMessage('You win!')
-    console.log(yes)
+    console.log('yes')
     }
   }
   
