@@ -10,63 +10,72 @@ var board={
       col:0,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:0,
       col:1,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:0,
       col:2,
       isMine:true,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:1,
       col:0,
       isMine:true,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:1,
       col:1,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:1,
       col:2,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:2,
       col:0,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:2,
       col:1,
       isMine:true,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     },
     {
       row:2,
       col:2,
       isMine:false,
       hidden:true,
-      surroundingMines:0
+      surroundingMines:0,
+      isMarked:false
     }
   ]
 }
