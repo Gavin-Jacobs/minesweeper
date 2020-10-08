@@ -11,7 +11,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+     
     },
     {
       row:0,
@@ -19,7 +19,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:0,
@@ -27,7 +27,7 @@ var board={
       isMine:true,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:1,
@@ -35,7 +35,7 @@ var board={
       isMine:true,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:1,
@@ -43,7 +43,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:1,
@@ -51,7 +51,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:2,
@@ -59,7 +59,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:2,
@@ -67,7 +67,7 @@ var board={
       isMine:true,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+      
     },
     {
       row:2,
@@ -75,7 +75,7 @@ var board={
       isMine:false,
       hidden:true,
       surroundingMines:0,
-      isMarked:false
+     
     }
   ]
 }
@@ -111,7 +111,7 @@ function checkForWin () {
   var count3=0
   var count4=0
   for( i=0; i<board.cells.length; i++) {
-    if (board.cells[0,1,2,3,4,5,6,7,8].isMine==true&&board.cells[0,1,2,3,4,5,6,7,8].Marked==true){
+    if (board.cells[i].isMine==true&&board.cells[i].isMarked==true){
     
     count3++
     }
