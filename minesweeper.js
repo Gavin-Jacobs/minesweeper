@@ -89,7 +89,7 @@ function startGame () {
 // 2. Are all of the mines marked?
 function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
-    if (board.cells[i].isMine==false&&board.cells[i].hidden==false){
+    if (board.cells.isMine==false&&board.cells.hidden==false){
     //return lib.displayMessage('You win!')
     console.log('yes')
     }
