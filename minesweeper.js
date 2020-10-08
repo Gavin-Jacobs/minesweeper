@@ -90,8 +90,9 @@ function startGame () {
 function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
     if (board.cells[i].isMine==true&&board.cells[i].isMarked==true){
-    //return lib.displayMessage('You win!')
+    
     console.log('yes')
+    return lib.displayMessage('You win!')
     }
   }
   
