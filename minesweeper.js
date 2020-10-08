@@ -77,7 +77,7 @@ function startGame () {
   for(i=0;i<board['cells'].length;i++){
    countSurroundingMines(0,1,2,3,4,5,6,7,8)
   }
-  
+  document.addEventListener('click', checkForWin)
   document.addEventListener('contextmenu',checkForWin)
 }
 
@@ -88,8 +88,9 @@ function startGame () {
 // 2. Are all of the mines marked?
 function checkForWin () {
   for( i=0; i<board.cells.length; i++) {
-    if ((board.cells.isMine==true &&board.cells.isMarked==true)==true &&(board.cells.isMine==false&&board.cells.hidden==false)==true)
+    if ((board.cells.isMine==true &&board.cells.isMarked==true)==true &&(board.cells.isMine==false&&board.cells.hidden==false)==true){
     return lib.displayMessage('You win!')
+    }
   }
   
     
