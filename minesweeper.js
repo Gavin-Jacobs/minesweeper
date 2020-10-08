@@ -119,7 +119,7 @@ function countSurroundingMines (cell) {
     
   }
   console.log(count)
-  test.surroundingMines=count
+  board.cells[cell].surroundingMines=count
 }
 
 console.log(countSurroundingMines(6))
