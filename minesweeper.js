@@ -97,6 +97,7 @@ function checkForWin () {
     if(board.cells[i].isMine==false){
       count2++
     }
+    console.log(count1,count2)
   }
   var count3=0
   var count4=0
@@ -141,4 +142,4 @@ function countSurroundingMines (cell) {
   board.cells[cell].surroundingMines=count
 }
 
-console.log(countSurroundingMines(6))
+//console.log(countSurroundingMines(6))
