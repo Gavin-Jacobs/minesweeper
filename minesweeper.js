@@ -9,7 +9,7 @@ var board={
       col:0,
       isMine:false,
       hidden:true,
-      surroundingMines:3
+      surroundingMines:0
     },
     {
       row:0,
@@ -44,7 +44,7 @@ var board={
       col:2,
       isMine:false,
       hidden:true,
-      surroundingMines:5
+      surroundingMines:0
     },
     {
       row:2,
