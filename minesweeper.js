@@ -120,7 +120,7 @@ function checkForWin () {
     }
     console.log(count3,count4)
   }
-  if(count1==count3&&count2==count4){
+  if(count1==count3||count2==count4){
     lib.displayMessage('You Win!')
   }
     
