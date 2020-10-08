@@ -14,7 +14,7 @@ var board={
     {
       row:0,
       col:1,
-      isMine:true,
+      isMine:false,
       hidden:true,
       surroundingMines:0
     },
@@ -35,7 +35,7 @@ var board={
     {
       row:1,
       col:1,
-      isMine:true,
+      isMine:false,
       hidden:true,
       surroundingMines:0
     },
@@ -63,7 +63,7 @@ var board={
     {
       row:2,
       col:2,
-      isMine:true,
+      isMine:false,
       hidden:true,
       surroundingMines:0
     }
