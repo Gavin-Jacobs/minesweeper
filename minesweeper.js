@@ -94,7 +94,7 @@ function checkForWin () {
     if(board.cells[i].isMine==true){
       count1++
     }
-    if(board.cell[i].isMine==false){
+    if(board.cells[i].isMine==false){
       count2++
     }
   }
